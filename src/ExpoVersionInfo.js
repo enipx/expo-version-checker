@@ -16,7 +16,14 @@ const {
     ios: { bundleIdentifier = null, buildNumber = null } = {},
 } = manifest;
 
+/**
+ * List of user's locales, returned as an array of objects.
+ * Guaranteed to contain at least 1 element. 
+ */
+const userLocales = Localization.getLocales?.()?.[0];
+
 const RNVersionCheck = {
+    country: userLocales?.regionCode || '',
     currentVersion: version,
     currentBuildNumber: Platform.select({
         android: versionCode,
@@ -28,13 +35,7 @@ const RNVersionCheck = {
     }),
 };
 
-/**
- * List of user's locales, returned as an array of objects.
- * Guaranteed to contain at least 1 element. 
- */
-const userLocales = Localization.getLocales()?.[0];
-
-const COUNTRY = userLocales?.regionCode || '';
+const COUNTRY = RNVersionCheck.country;
 const PACKAGE_NAME = RNVersionCheck.packageName;
 const CURRENT_BUILD_NUMBER = RNVersionCheck.currentBuildNumber;
 const CURRENT_VERSION = RNVersionCheck.currentVersion;
