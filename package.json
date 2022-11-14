@@ -1,0 +1,35 @@
+{
+  "name": "expo-version-checker",
+  "version": "1.0.0",
+  "description": "Version checker for expo applications",
+  "main": "index.js",
+  "keywords": [
+    "version checker",
+    "expo",
+    "react-native",
+    "android",
+    "ios",
+    "app store version",
+    "playstore store version",
+    "version check",
+    "version"
+  ],
+  "license": "MIT",
+  "author": "Hashir <progenipx@gmail.com> (https://github.com/enipx)",
+  "peerDependencies": {
+    "expo": ">=26"
+  },
+  "dependencies": {
+    "expo-constants": "14.0.0",
+    "expo-localization": "14.0.0",
+    "react-native-version-check": "^3.4.3"
+  },
+  "devDependencies": {
+    "expo": "^33.0.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz"
+  },
+  "repository": {
+	  "type": "git",
+	  "url": "https://github.com/enipx/expo-version-checker.git"
+  }
+}
