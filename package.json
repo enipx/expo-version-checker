@@ -1,6 +1,6 @@
 {
   "name": "expo-version-checker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Version checker for expo applications",
   "main": "index.js",
   "keywords": [
@@ -29,7 +29,7 @@
     "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz"
   },
   "repository": {
-	  "type": "git",
-	  "url": "https://github.com/enipx/expo-version-checker.git"
+    "type": "git",
+    "url": "https://github.com/enipx/expo-version-checker.git"
   }
 }
