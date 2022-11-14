@@ -1,6 +1,6 @@
 # expo-version-checker
 
-This project was forked from this package <https://github.com/kimxogus/react-native-version-check>.
+This project is built around this package <https://github.com/kimxogus/react-native-version-check> to run smoothly on expo.
 
 ## Getting started
 
@@ -28,9 +28,9 @@ VersionCheck.getLatestVersion()
 
 VersionCheck.needUpdate()
 .then((res) => {
- console.log(res);    // { currentVersion: 1.0.2, isNeeded: true, latestVersion: 1.0.4, storeUrl: IOS | Android Url }
- if (res.isNeeded) {
-  // you can do whatever you want here open
+  console.log(res);    // { currentVersion: 1.0.2, isNeeded: true, latestVersion: 1.0.4, storeUrl: IOS | Android Url }
+  if (res.isNeeded) {
+ // you can do whatever you want here open
  }
 });
 
